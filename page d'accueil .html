@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta charset="UTF-8">
+    <title>Mon Portfolio</title>
+    <style type="text/css">
+    
+body {
+    font-family: Tahoma, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+}
+h2 {
+    border: 2px solid;
+    color: blue;
+    text-align: center;
+}
+header {
+    background-color: #333;
+    color: yellow;
+    padding: 10px;
+    text-align: center;
+    display: block;
+    border: 5px solid yellow;
+    margin: 5px;
+    font-size: 10px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+    display: inline-block;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-attachment: bold;
+    color: black;
+}
+
+nav ul li {
+    margin:  15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+    
+}
+
+main {
+    padding: 20px;
+    max-width: 800px;
+    margin: auto;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+footer {
+    background-color: black;
+    color: yellow;
+    text-align: center;
+    padding: 10px;
+    position: static;
+    bottom: 0;
+    width: 100%;
+}
+
+.projet {
+  transition: transform 0.3s ease;
+}
+.projet:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+border: 1px solid blue;
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.page-content {
+  min-height: calc(100vh - 60px); /* 60px = hauteur approximative du footer */
+  padding-bottom: 20px;
+}
+
+footer {
+  height: 60px;
+  background-color: #1e3a8a;
+  color: white;
+  text-align: center;
+  line-height: 60px;
+}
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 1.5s forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+
+
+.slide-left {
+  opacity: 0;
+  transform: translateX(-50px);
+  animation: slideLeft 1s forwards;
+}
+
+@keyframes slideLeft {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+</style>
+<body>
+    <header>
+        <h1>Luchako's Dev.</h1>
+        <nav>
+            <ul>
+              
+                <li><a href="apropos.html">À propos</a></li>
+                <li><a href="formation.html">Formation</a></li>
+                <li><a href="competences.html">Compétences</a></li>
+                <li><a href="projets.html">Projets</a></li>
+                <li><a href="loisirs.html">Loisirs</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Accueil</h2>
+        <p class="fade-in">Bienvenue sur Luchako's Dev.</p>
+        <p>Je suis Withshadson LUCIEN. Je suis en train de suivre aussi une
+formation en cybersecurité sur Coursera et Je suis un gestionnaire de projet certifiée.</p>
+<p> Je suis de nationalité haïtienne et je vis en Haïti. Pour l'instant présent je suis étudiant en 3ème année en sciences économiques à la faculté de droit et des sciences économiques de l'Université d'État d'Haïti (UEH/FDSE). J'aime beaucoup apprendre . Je tiens dejà à vous remercier d'avoir visiter ma page et je suis très content de presenter mon projet final en tant que developpeur Web. Sur ce, je tenais à remercier l'OIF par le biais du programme D-clic de m'avoir offrir Cet opportunité. Merçi du fonds du coeur !!!!! </p>
+    </main>
+
+    <footer>
+        <p>© 2025 Withshadson LUCIEN</p>
+    </footer>
+    </body>
+    </html>
