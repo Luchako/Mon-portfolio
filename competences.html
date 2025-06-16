@@ -4,41 +4,59 @@
     <meta charset="UTF-8">
     <title>mon portfolio</title>
     <style type="text/css">
-    h2 {
-     border: 2px solid;
-    color: blue;
+
+     
+.skill-box {
+  width: 300px;
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.bar {
+  width: 100%;
+  height: 8px;
+  background: #e0e0e0;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+
+.progress {
+  height: 100%;
+  background: #00d1d1;
+  border-radius: 5px;
+}
+h2 {
     text-align: center;
-    }
-    footer {
-    background-color: black;
-    color: yellow;
-    text-align: center;
-    padding: 10px;
-    position: static;
-    bottom: 0;
-    width: 100%;
 }
 </style>
 </head>
 <body>
-<h2>Compétences</h2>
-<ul>
-  <li>HTML / CSS / JavaScript</li>
-  <li>Relations publiques</li>
-  <li>Gestion du temps</li>
-  <li>Diagnostic et dépannage des problèmes
-matériels et logiciels des appareils mobiles</li>
-<li>Travail d'équipe</li>
-<li>Communication efficace</li>
-<li>Leadership</li>
-<li>Pensée critique</li>
-</ul>
-<h2>Langues</h2>
-<ol>
-    <li>Créole:courant</li>
-    <li>Français:courant</li>
-    <li>Anglais:intermediaire</li>
-</ol>
-    
+   <h2>Mes compétences</h2>
+<div class="skill-box">
+  <h3>Soft Skills</h3>
+  <p>Gestion de projet</p>
+  <div class="bar"><div class="progress" style="width: 80%;"></div></div>
+
+  <p>Résolution de problème</p>
+  <div class="bar"><div class="progress" style="width: 80%;"></div></div>
+
+  <p>Adaptabilité</p>
+  <div class="bar"><div class="progress" style="width: 90%;"></div></div>
+</div>
+<p><div class="skill-box">
+  <h3>Hard Skills</h3>
+  <p>HTML</p>
+  <div class="bar"><div class="progress" style="width: 90%;"></div></div>
+
+  <p>CSS</p>
+  <div class="bar"><div class="progress" style="width: 70%;"></div></div>
+
+  <p>Java Script</p>
+  <div class="bar"><div class="progress" style="width: 80%;"></div></div>
+    <p>VS code</p>
+  <div class="bar"><div class="progress" style="width: 80%;"></div></div>
+</div>
+
 </body>
 </html>

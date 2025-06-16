@@ -4,64 +4,87 @@
     <meta charset="UTF-8">
     <title>mon portfolio</title>
     <style type="text/css">
-    h2 {
-     border: 2px solid;
-    color: blue;
-    text-align: center;
-    }
-    
-    body {
-        font-size: 30px;
-    }
-    footer {
-    background-color: black;
-    color: yellow;
-    text-align: center;
-    padding: 10px;
-    position: static;
-    bottom: 0;
-    width: 100%;
+    contact {
+  padding: 60px 20px;
+  background-color: #fff;
+  text-align: center;
 }
+h2 {
+    color: white;
+}
+
+.contact form {
+  max-width: 600px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  
+}
+.contact input,
+.contact textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.contact textarea {
+  resize: vertical;
+  height: 120px;
+}
+footer {
+  background-color: white;
+  color: black;
+  text-align: center;
+  padding: 10px ;
+  margin-top: 5px;
+}
+    button {
+  background-color: #00e5ff;
+  color: white;
+  padding: 10px 20px;;
+  text-decoration: none;
+  border-radius: 20px;
+  font-weight: bold;
+  display: block;
+  margin:20px auto;
+  
+    }
+    body {
+        background-color: black;
+    }
     
+.nom-prenom {
+  display: flex;
+  gap: 10px;
+}
+
+.nom-prenom input {
+  flex: 1;
+}
+
 </style>
 </head>
 <body>
 
-<h2>Contactez-moi</h2>
-<form>
-  <label>Nom :</label><br>
-  <input type="text" required><br><br>
+<section class="contact" id="contact">
+  <h2>Vous avez un <span style="color: #00e5ff;">projet en tête ?</span> N'hesitez pas à me <span style="color: #00e5ff;">Contacter !</span></h2>
+  <form>
+<div class="nom-prenom">
+  <input type="text" placeholder="Votre nom">
+  <input type="text" placeholder="Votre prénom">
+</div>
+    <input type="email" placeholder="Votre e-mail" required>
+    <textarea placeholder="Votre message" required></textarea>
+    <p>
+    <button type="submit" class="btn">Envoyer</button>
+  </form>
+</section>
 
-  <label>Email :</label><br>
-  <input type="email" required><br><br>
-
-  <label>Message :</label><br>
-  <textarea required></textarea><br><br>
-
-  <button type="submit">Envoyer</button>
-</form>
-<script>
-  const form = document.querySelector("form");
-  form.addEventListener("submit", function(event) {
-    const inputs = form.querySelectorAll("input, textarea");
-    let valid = true;
-
-    inputs.forEach(input => {
-      if (!input.value.trim()) {
-        valid = false;
-        input.style.border = "10px solid red";
-      } else {
-        input.style.border = "";
-      }
-    });
-
-    if (!valid) {
-      event.preventDefault();
-      alert("Veuillez remplir tous les champs.");
-    }
-</script>
 <footer>
-        <p>© 2025 Withshadson LUCIEN</p>
-    </footer>
+    design by <span style="color: #00e5ff; text-align: left;">withshadson </span>
+  <span style="text-align: right;">&copy;  Tous droits réservés.</span>
+</footer>
+
 </body>
 </html>

@@ -7,43 +7,69 @@
     <title>mon portfolio</title>
  
     <style type="text/css"> 
-    P {
-        Color:BLUE;
-        text-align: center;
-        background-color: white;
-        width: 300px; 
-        border: 4px solid;
-    }
-    img {
-        border: 5px solid;
-    }
-    body {
-        position: static;
-    }
-    footer {
-    background-color: black;
-    color: yellow;
+    projects {
+  padding: 60px 20px;
+  background-color: #fff;
+  text-align: center;
+  color: #00e5ff;
+}
+h2 {
+    color: #00e5ff;
+}
+
+.project-cards {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.card {
+  background-color: #f1f1f1;
+  padding: 20px;
+  width: 250px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.card h3 {
+  margin-bottom: 10px;
+}
+a {
+    background-color: #00e5ff;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: bold;
+}
+h2 {
     text-align: center;
-    padding: 10px;
-    position: static;
-    bottom: 0;
-    width: 100%;
 }
 
     </style>
     </head>
 <body>
-<h2>Mes projets</h2>
-<ul>
-<li>mini-app </li>
-<li>mon porfolio</li>
-<li>un site e-commerce</li>
-</ul>
-<p>Voici la photo de la page que j’ai développée : mon portfolio</p>
-<img src="mini-app.jpg" alt="capture d’écran de la mini-app" width="300"></p>
-<footer>
-        <p>© 2025 Withshadson LUCIEN</p>
-    </footer>
-
+<section class="projects" id="projects">
+  <h2>Mes Projets</h2>
+  <div class="project-cards">
+    <div class="card">
+      <h3>Mini-jeu 1</h3>
+      <p>Un mini-jeu interactif en JavaScript qui utilise les événements DOM.</p>      #html,#css,#js<p>
+      <a href="#" class="btn">Voir</a>
+    </div>
+    <div class="card">
+      <h3>Mini-app 2</h3>
+      <p>Une petite application JavaScript avec formulaire et validation.</p>
+      #html,#css,#js<p><a href="#" class="btn">Voir</a>
+    </div>
+    <div class="card">
+      <h3>Mini-site 3</h3>
+      <p>Un site web statique avec HTML et CSS responsif.</p>      #html,#css,#js<p>
+      <a href="#" class="btn">Voir</a>
+    </div>
+  </div>
+</section>
 </body>
 </html>
